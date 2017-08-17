@@ -1,0 +1,22 @@
+{
+    "name": "phpkit/consulapi",
+    "description": "consul api 服务注册 ， 服务发现",
+    "keywords": [
+        "consulapi"
+    ],
+    "homepage": "http://www.phpkit.me/",
+    "license": "Apache-2.0",
+    "authors": [{
+        "name": "wen190",
+        "email": "359945126@qq.com"
+    }],
+    "config": {
+        "preferred-install": "dist"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "phpkit\\consulapi\\": "./"
+        }
+    }
+}
