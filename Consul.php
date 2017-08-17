@@ -17,10 +17,8 @@ Class Consul {
 	}
 	//服务注册到consul
 	function registerServices($data) {
-		var_dump($data);
 		$url = $this->url . '/agent/service/register';
 		$ret = $this->myCurl($url, $data);
-		var_dump($ret);
 		return $ret;
 	}
 	//查所有服务
