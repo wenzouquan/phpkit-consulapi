@@ -38,7 +38,7 @@ Class Consul {
 	function findService($name) {
 		$url = $this->url . '/catalog/service/' . $name;
 		$ret = $this->myCurl($url);
-		return $ret;
+		return json_decode($ret, true);
 	}
 
 }
